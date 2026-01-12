@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Контейнер */
+.lang-switch {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    gap: 8px;
+}
+
+/* Кнопки */
+.lang-btn {
+    padding: 8px 14px;
+    border: none;
+    border-radius: 6px;
+    background-color: #e0e0e0;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+/* Анимация клика */
+.lang-btn:active {
+    transform: scale(0.95);
+}
+
+/* Активный язык */
+.lang-btn.active {
+    background-color: #b0b0b0;
+}
+
+/* Активная кнопка — нельзя кликать */
+.lang-btn.active {
+    background-color: #b0b0b0;
+    cursor: default;
+    
+}
